@@ -1,0 +1,3 @@
+1. Write a program to create barplots for all the categorical columns in mtcars.
+ggplot(gather(mtcars), aes(value)) +   geom_barplot(bins = 10) +  facet_wrap(~key, scales = 'free_x').
+
